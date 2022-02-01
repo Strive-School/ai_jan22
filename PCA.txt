@@ -1,5 +1,0 @@
-- First, the covariance matrix ZᵀZ is a matrix that contains estimates of how every   variable in Z relates to every other variable in Z. Understanding how one variable   is associated with another is quite powerful.
-
-- Second, eigenvalues and eigenvectors are important. Eigenvectors represent   directions. Think of plotting your data on a multidimensional scatterplot. Then one    can think of an individual eigenvector as a particular “direction” in your     scatterplot of data. Eigenvalues represent magnitude, or importance. Bigger   eigenvalues correlate with more important directions.
-
-- Finally, we make an assumption that more variability in a particular direction   correlates with explaining the behavior of the dependent variable. Lots of   variability usually indicates signal, whereas little variability usually indicates   noise. Thus, the more variability there is in a particular direction is,   theoretically, indicative of something important we want to detect.
