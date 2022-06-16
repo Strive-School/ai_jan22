@@ -1,4 +1,3 @@
-from turtle import forward
 import torch as T
 import torch.nn as nn
 import torch.nn.functional as F
@@ -18,9 +17,12 @@ class Recurrent_Net(nn.Module):
 
         h_0 = T.zeros((self.n_layers, self.batch_size, self.hidden_size))
 
-        _, h_n = self.rnn(x, h_0)
+        rnn_out, h_n = self.rnn(x, h_0)
+        # print(rnn_out.shape)
+        
         last_hidden = h_n[-1]
         out = F.relu(self.fc(last_hidden))
+        print(h_n.shape, last_hidden.shape)
 
         return out
 
